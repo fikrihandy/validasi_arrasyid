@@ -25,7 +25,7 @@ class Show extends StatelessWidget {
             ),
             padding: const EdgeInsets.all(20.0),
             width: 400,
-            height: 235,
+            height: 280,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
@@ -71,27 +71,34 @@ class Show extends StatelessWidget {
                     Container(
                       color: Colors.grey[100],
                       width: 40,
-                      height: 40,
+                      height: 60,
                       child: const Icon(
                         Icons.verified_rounded,
                         color: Colors.green,
                       ),
                     ),
                     Container(
-                      width: 315,
-                      height: 40,
+                      width: 155,
+                      height: 60,
                       color: Colors.grey[100],
                       child: Center(
                         child: Text(
-                          '''Telah menyelesaikan pendidikan Ma'had Aly
-Tahun Kelulusan : ${dataMhs[2]} ''',
+                          '''Telah menyelesaikan pendidikan
+Ma'had Aly Ar-Rasyid''',
                           textAlign: TextAlign.center,
-                          style: GoogleFonts.montserrat(),
+                          style: GoogleFonts.montserrat(fontSize: 12.5),
                         ),
                       ),
                     ),
                   ],
-                )
+                ),
+                const SizedBox(
+                  height: 6.5,
+                ),
+                Text(
+                  'Tahun Kelulusan : ${dataMhs[2]}',
+                  style: GoogleFonts.montserrat(fontSize: 12.5),
+                ),
               ],
             ),
           ),
