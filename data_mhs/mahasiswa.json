@@ -1,0 +1,18 @@
+{
+    "mahasiswa": [
+        {
+            "nama": "My Name",
+            "nim": 215611098,
+            "nomor_ijazah": 19881988,
+            "ttl": "Wonogiri, 21 Februari 2000",
+            "tahun_lulus": 2021
+        },
+        {
+            "nama": "MNama Dua",
+            "nim": 215611099,
+            "nomor_ijazah": 19881988,
+            "ttl": "Wonogiri, 21 Februari 2000",
+            "tahun_lulus": 2021
+        }
+    ]
+}
