@@ -105,7 +105,7 @@ class _ValidateState extends State<Validate> {
                           try {
                             student = students.findMahasiswaByNim(nim);
                             navigateToShow(context);
-                          } on Exception catch (e) {
+                          } on Error catch (e) {
                             navigateToNotShow(context);
                           }
                         },
