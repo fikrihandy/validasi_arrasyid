@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'data.dart';
 import 'show.dart';
-import 'data_mhs.dart';
 import 'not_show.dart';
 
 late String nim;
-dynamic dataMhs;
+late Mahasiswa student;
 
 class Validate extends StatefulWidget {
   const Validate({Key? key}) : super(key: key);
@@ -15,6 +15,16 @@ class Validate extends StatefulWidget {
 }
 
 class _ValidateState extends State<Validate> {
+  Future<void> navigateToNotShow(BuildContext context) async {
+    await Navigator.of(context)
+        .push(MaterialPageRoute(builder: (context) => const NotShow()));
+  }
+
+  Future<void> navigateToShow(BuildContext context) async {
+    await Navigator.of(context)
+        .push(MaterialPageRoute(builder: (context) => const Show()));
+  }
+
   final TextEditingController _controller = TextEditingController();
 
   @override
@@ -89,14 +99,14 @@ class _ValidateState extends State<Validate> {
                         style: ElevatedButton.styleFrom(
                           padding: const EdgeInsets.all(25.0),
                         ),
-                        onPressed: () {
-                          dataMhs = dataMasyid[int.parse(nim)];
-                          if (dataMhs == null) {
-                            Navigator.of(context).push(MaterialPageRoute(
-                                builder: (context) => const NotShow()));
-                          } else {
-                            Navigator.of(context).push(MaterialPageRoute(
-                                builder: (context) => const Show()));
+                        onPressed: () async {
+                          var students = await fetchDataMahasiswa();
+
+                          try {
+                            student = students.findMahasiswaByNim(nim);
+                            navigateToShow(context);
+                          } on Exception catch (e) {
+                            navigateToNotShow(context);
                           }
                         },
                         child: Text(

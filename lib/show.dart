@@ -10,7 +10,7 @@ class Show extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          "${dataMhs[0]}",
+          student.nama,
           style: GoogleFonts.poppins(),
         ),
       ),
@@ -34,7 +34,7 @@ class Show extends StatelessWidget {
                   style: GoogleFonts.montserrat(fontSize: 12.5),
                 ),
                 Text(
-                  dataMhs[0],
+                  student.nama,
                   style: GoogleFonts.montserrat(
                       fontWeight: FontWeight.bold, fontSize: 15.75),
                 ),
@@ -58,7 +58,7 @@ class Show extends StatelessWidget {
                   style: GoogleFonts.montserrat(fontSize: 12.5),
                 ),
                 Text(
-                  dataMhs[1],
+                  student.ttl,
                   style: GoogleFonts.montserrat(
                       fontWeight: FontWeight.bold, fontSize: 15),
                 ),
@@ -96,7 +96,7 @@ Ma'had Aly Ar-Rasyid''',
                   height: 6.5,
                 ),
                 Text(
-                  'Tahun Kelulusan : ${dataMhs[2]}',
+                  'Tahun Kelulusan : ${student.tahunLulus}',
                   style: GoogleFonts.montserrat(fontSize: 12.5),
                 ),
               ],
