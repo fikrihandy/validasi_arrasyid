@@ -1,18 +1,95 @@
 {
-    "mahasiswa": [
-        {
-            "nama": "My Name",
-            "nim": "215611098",
-            "nomor_ijazah": "19881988",
-            "ttl": "Wonogiri, 21 Februari 2000",
-            "tahun_lulus": "2021"
-        },
-        {
-            "nama": "MNama Dua",
-            "nim": "215611099",
-            "nomor_ijazah": "19881988",
-            "ttl": "Wonogiri, 21 Februari 2000",
-            "tahun_lulus": "2021"
-        }
-    ]
+  "mahasiswa": [
+    {
+      "nama": "Halimatuppatimah",
+      "nim": "1801003",
+      "nomor_ijazah": "0",
+      "ttl": "Jakarta, 20 Agustus 1999",
+      "tahun_lulus": "2021"
+    },
+    {
+      "nama": "Hani Nur Fitriani",
+      "nim": "1801004",
+      "nomor_ijazah": "0",
+      "ttl": "Klaten , 03 November 2000",
+      "tahun_lulus": "2021"
+    },
+    {
+      "nama": "Indah Wahyu Utami",
+      "nim": "1801005",
+      "nomor_ijazah": "0",
+      "ttl": "Karanganyar, 18 Februari 2000",
+      "tahun_lulus": "2021"
+    },
+    {
+      "nama": "Maryanti",
+      "nim": "1801007",
+      "nomor_ijazah": "0",
+      "ttl": "Karanganyar, 26 Februari 2000",
+      "tahun_lulus": "2021"
+    },
+    {
+      "nama": "Maulida Fortuna",
+      "nim": "1801008",
+      "nomor_ijazah": "0",
+      "ttl": "Blitar, 24 November 1999",
+      "tahun_lulus": "2021"
+    },
+    {
+      "nama": "Nur Aisyah",
+      "nim": "1801009",
+      "nomor_ijazah": "0",
+      "ttl": "Karanganyar, 14 Januari 2000",
+      "tahun_lulus": "2021"
+    },
+    {
+      "nama": "Nur Dewi Hastuti",
+      "nim": "1801010",
+      "nomor_ijazah": "0",
+      "ttl": "Karanganyar, 13 November 1999",
+      "tahun_lulus": "2021"
+    },
+    {
+      "nama": "Nurul Ihyani",
+      "nim": "1801012",
+      "nomor_ijazah": "0",
+      "ttl": "Ciamis, 11 Agustus 1999",
+      "tahun_lulus": "2021"
+    },
+    {
+      "nama": "Rica Rahmawati",
+      "nim": "1801013",
+      "nomor_ijazah": "0",
+      "ttl": "Sukoharjo, 01 Mei 1998",
+      "tahun_lulus": "2021"
+    },
+    {
+      "nama": "Rizki Abdillah",
+      "nim": "1801014",
+      "nomor_ijazah": "0",
+      "ttl": "Karanganyar, 09 Mei 2000",
+      "tahun_lulus": "2021"
+    },
+    {
+      "nama": "Vina Dwi Agustin",
+      "nim": "1801016",
+      "nomor_ijazah": "0",
+      "ttl": "Boyolali, 31 Agustus 2000",
+      "tahun_lulus": "2021"
+    },
+    {
+      "nama": "Yupita Sandra Leka",
+      "nim": "1801017",
+      "nomor_ijazah": "0",
+      "ttl": "Gunung Karto, 04 April 1999",
+      "tahun_lulus": "2021"
+    },
+    {
+      "nama": "Kurniawati",
+      "nim": "1801018",
+      "nomor_ijazah": "0",
+      "ttl": "Kediri, 30 November 2000",
+      "tahun_lulus": "2021"
+    }
+  ]
 }
