@@ -4,6 +4,7 @@ import 'validate.dart';
 
 class Show extends StatelessWidget {
   const Show({Key? key}) : super(key: key);
+  static String route = '/data';
 
   @override
   Widget build(BuildContext context) {

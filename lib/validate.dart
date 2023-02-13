@@ -4,10 +4,12 @@ import 'data.dart';
 import 'show.dart';
 import 'not_show.dart';
 
-late String nim;
+String nim = '0';
 late Mahasiswa student;
 
 class Validate extends StatefulWidget {
+  static const String route = '/validate';
+
   const Validate({Key? key}) : super(key: key);
 
   @override
@@ -15,14 +17,8 @@ class Validate extends StatefulWidget {
 }
 
 class _ValidateState extends State<Validate> {
-  Future<void> navigateToNotShow(BuildContext context) async {
-    await Navigator.of(context)
-        .push(MaterialPageRoute(builder: (context) => const NotShow()));
-  }
-
-  Future<void> navigateToShow(BuildContext context) async {
-    await Navigator.of(context)
-        .push(MaterialPageRoute(builder: (context) => const Show()));
+  Future<void> navigate(bool show) async {
+    Navigator.of(context).pushNamed(show ? Show.route : NotShow.route);
   }
 
   final TextEditingController _controller = TextEditingController();
@@ -104,9 +100,10 @@ class _ValidateState extends State<Validate> {
 
                           try {
                             student = students.findMahasiswaByNim(nim);
-                            navigateToShow(context);
-                          } on Error catch (e) {
-                            navigateToNotShow(context);
+                            await navigate(true);
+                          } on Error {
+                            print("ERROR ??");
+                            await navigate(false);
                           }
                         },
                         child: Text(

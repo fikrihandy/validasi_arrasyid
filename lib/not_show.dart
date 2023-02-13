@@ -3,6 +3,8 @@ import 'package:google_fonts/google_fonts.dart';
 import 'validate.dart';
 
 class NotShow extends StatelessWidget {
+  static const String route = '404';
+
   const NotShow({Key? key}) : super(key: key);
 
   @override

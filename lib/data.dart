@@ -53,10 +53,3 @@ Future<DataMahasiswa> fetchDataMahasiswa() async {
     throw Exception('Failed to load data');
   }
 }
-
-// void main() async {
-//   var students = await fetchDataMahasiswa();
-//   var student = students.findMahasiswaByNim("1w");
-//   print(student.nama);
-//   print(student.runtimeType);
-// }
